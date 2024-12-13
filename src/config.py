@@ -19,13 +19,6 @@ class Config:
             
             # 加载 PPT 默认模板
             self.ppt_template = config.get('ppt_template', "templates/MasterTemplate.pptx")
-            
-            # 加载布局映射
-            self.layout_mapping = config.get('layout_mapping', {})
 
-            # 加载 LLM 相关配置
-            llm_config = config.get('llm', {})
-            self.llm_model_type = llm_config.get('model_type', 'openai')
-            self.openai_model_name = llm_config.get('openai_model_name', 'gpt-4o-mini')
-            self.ollama_model_name = llm_config.get('ollama_model_name', 'llama3')
-            self.ollama_api_url = llm_config.get('ollama_api_url', 'http://localhost:11434/api/chat')
+            # 加载 ChatBot Prompt
+            self.chatbot_prompt = config.get('chatbot_prompt', '')

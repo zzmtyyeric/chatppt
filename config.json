@@ -1,16 +1,5 @@
 {
     "input_mode": "text",
-    "ppt_template": "templates/MasterTemplate.pptx",
-    "layout_mapping": {
-        "Title Only": 0,
-        "Title and Content": 1,
-        "Title and Picture": 2,
-        "Title, Content, and Picture": 3
-    },
-    "llm": {
-        "model_type": "openai",
-        "openai_model_name": "gpt-4",
-        "ollama_model_name": "llama3.1",
-        "ollama_api_url": "http://localhost:11434/api/chat"
-    }
+    "chatbot_prompt": "prompts/chatbot.txt",
+    "ppt_template": "templates/SimpleTemplate.pptx"
 }
